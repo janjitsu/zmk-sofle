@@ -58,6 +58,12 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
+
+        middleclick {
+            bindings = <&mkp MCLK>;
+            key-positions = <59 61>;
+            layers = <2>;
+        };
     };
 
     macros {
@@ -86,7 +92,7 @@
 &kp TAB        &kp Q      &kp W         &kp E         &kp R              &kp T        &kp DOWN_ARROW   &kp Y            &kp U              &kp I          &kp O    &kp P      &kp LEFT_BRACKET
 &kp BACKSPACE  &kp A      &kp S         &kp D         &kp F              &kp G        &kp LEFT_ARROW   &kp H            &kp J              &kp K          &kp L    &kp SEMI   &kp APOS
 &kp LSHFT      &kp Z      &kp X         &kp C         &kp V              &kp B        &kp RIGHT_ARROW  &kp N            &kp M              &kp COMMA      &kp DOT  &kp FSLH   &tap_hold 2 ENTER
-&kp C_MUTE     &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &tap_hold 2 SPACE  &kp LCTRL    &kp ENTER        &kp RIGHT_SHIFT  &tap_hold 3 ENTER  &kp RIGHT_ALT  &tog 2   &kp RCTRL
+&kp C_MUTE     &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &tap_hold 1 SPACE  &kp LCTRL    &kp ENTER        &kp RIGHT_SHIFT  &tap_hold 2 ENTER  &kp RIGHT_ALT  &tog 1   &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -102,20 +108,20 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
             >;
 
-            display-name = "layer1";
+            display-name = "fnlayer";
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_1 {
+        led_arrows {
             bindings = <
 &kp GRAVE        &kp F1           &kp F2                            &kp F3                           &kp F4                             &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp PRINTSCREEN
 &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &mkp LCLK                         &mkp MCLK                        &mkp RCLK                          &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
 &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_COLOR_HSB(58,100,50)  &rgb_ug RGB_COLOR_HSB(0,100,85)  &rgb_ug RGB_COLOR_HSB(270,100,54)  &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans           &rgb_ug RGB_TOG  &rgb_ug RGB_EFR                   &rgb_ug RGB_EFF                  &rgb_ug RGB_SPD                    &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE       &trans           &trans                            &trans                           &trans                             &trans             &mkp LCLK        &trans           &mo 0            &trans      &trans     &trans
+&kp C_MUTE       &trans           &trans                            &trans                           &trans                             &trans             &mkp LCLK        &mkp LCLK        &mo 0            &mkp RCLK   &trans     &trans
             >;
 
-            display-name = "layer1";
+            display-name = "layer2";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -128,7 +134,7 @@
 &trans           &trans        &trans          &trans        &mo 0         &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
             >;
 
-            display-name = "layer2";
+            display-name = "layer3";
             sensor-bindings = <&scroll_encoder>;
         };
     };
