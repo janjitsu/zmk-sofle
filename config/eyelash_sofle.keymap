@@ -44,7 +44,7 @@
 
         #binding-cells = <2>;
         flavor = "balanced";
-        tapping-term-ms = <200>;
+        tapping-term-ms = <180>;
     };
 
     tap_hold_kp: tap_hold_kp {
@@ -54,7 +54,7 @@
 
         #binding-cells = <2>;
         flavor = "balanced";
-        tapping-term-ms = <200>;
+        tapping-term-ms = <180>;
     };
 
     behaviors {
@@ -130,7 +130,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans   &kp RIGHT_BRACKET
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans   &kp BACKSLASH
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &tog 0   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
             >;
 
             display-name = "fnlayer";
